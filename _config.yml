@@ -1,32 +1,31 @@
 # Site settings
-title: Dr. Spencer Bryngelson
-email: spencer@caltech.edu
-description: Academic webpage of Dr. Spencer H. Bryngelson
+title: Divyang Mittal
+email: divyangmittal44@gmail.com
+description: Academic webpage of Divyang Mittal
 baseurl: ""
 url: ""
 
 
 # Google analytics ID: Remove or use your own!
-google_analytics: UA-167467135-1
-google_analytics_4: G-02KDGRRB2T
-google_tag_manager: GTM-TZ9Z7HZ
+# google_analytics: UA-167467135-1
+# google_analytics_4: G-02KDGRRB2T
+# google_tag_manager: GTM-TZ9Z7HZ
 
 # Footer info
 affiliation: >
-    Dr. Spencer Bryngelson<br/>
-    Senior Postdoctoral Scholar<br/>
-    <a href="http://www.eas.caltech.edu/" target="_blank">Engineering and Applied Science</a><br/>
-    California Institute of Technology
+    Divyang Mittal<br/>
+    Software Engineer<br/>
+    Appdynamics
 
-location: >
-  <a href="http://www.mce.caltech.edu/about/gates_thomas" target="_blank">Gates-Thomas Laboratory</a><br/>
-  California Institute of Technology <br/>
-  1200 E California Blvd<br/>
-  Pasadena, CA 91125, MC104-44
+# location: >
+#   <a href="http://www.mce.caltech.edu/about/gates_thomas" target="_blank">Gates-Thomas Laboratory</a><br/>
+#   California Institute of Technology <br/>
+#   1200 E California Blvd<br/>
+#   Pasadena, CA 91125, MC104-44
 
 contact: >
-    <a href="mailto:spencer@caltech.edu" target="_blank"><i class="fa fa-envelope fa-1x"></i> Contact Spencer via email</a> <br/>
-    <a href="/aboutwebsite.html"><i class="fa fa-github fa-1x"></i> Use this site as a template!</a>
+    <a href="mailto:divyangmittal44@gmail.com" target="_blank"><i class="fa fa-envelope fa-1x"></i> Contact Divyang via email</a> <br/>
+    <a href="https://github.com/divyang-mittal"><i class="fa fa-github fa-1x"></i></a> <a href="https://www.linkedin.com/in/divyang-mittal-95a334170/"><i class="fa fa-linkedin fa-1x"></i></a>
 
 # Pages shown in navbar
 nav_pages:
@@ -66,8 +65,8 @@ plugins: ['jekyll/scholar']
 
 scholar:
 
-  last_name: Bryngelson
-  first_name: [Spencer H.]
+  last_name: Mittal
+  first_name: [Divyang]
 
   style: shb
   locale: en
