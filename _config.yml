@@ -27,11 +27,12 @@ contact: >
     <a href="mailto:divyangmittal44@gmail.com" target="_blank"><i class="fa fa-envelope fa-1x"></i> Contact Divyang via email</a> <br/>
     <a href="https://github.com/divyang-mittal"><i class="fa fa-github fa-1x"></i></a> <a href="https://www.linkedin.com/in/divyang-mittal-95a334170/"><i class="fa fa-linkedin fa-1x"></i></a>
 
+# Probably add travel map
 # Pages shown in navbar
 nav_pages:
   - name: about
-  - name: publications
-  - name: talks
+#   - name: projects
+#   - name: talks
   - name: research
   - name: software
 # - name: team
