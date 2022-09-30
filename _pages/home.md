@@ -21,7 +21,7 @@ exceptional 158,976 computational nodes. This is evidence enough to understand t
 ### About me
 
 I work as a Software Engineer in the data platform team at AppDynamics. I design and develop microservices that handle millions of packets every second.
-My contribution includes creating a library used company-wide to create SLI for microservices.
+My contributions include creating a library used company-wide to create SLI for microservices.
 I completed my Bachelor's in Computer Science and Engineering from <a href="http://iitkgp.ac.in/" target="_blank">Indian Institute of Technology Kharagpur</a>.
 My research interest lies in computer systems, and I wish to pursue a career as an industrial researcher.
 

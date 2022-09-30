@@ -60,20 +60,19 @@ permalink: /about/
 </div>
 {% endfor %}
 
-{% if site.data.grants %}
 <div class="jumbotron">
-### Grants
+### About Me
 <ul>
-{% for grant in site.data.grants %}
- <li> {{ grant.name }} </li>
-{% endfor %}
+ I work as a Software Engineer in the data platform team at AppDynamics. I design and develop microservices that handle millions of packets every second.
+My contributions include creating a library used company-wide to create SLI for microservices.
+I completed my Bachelor's in Computer Science and Engineering from <a href="http://iitkgp.ac.in/" target="_blank">Indian Institute of Technology Kharagpur</a>.
+My research interest lies in computer systems, and I wish to pursue a career as an industrial researcher.
 </ul>
 </div>
-{% endif %}
 
 {% if site.data.awards %}
 <div class="jumbotron">
-### Awards
+### Achievements
 <ul>
 {% for award in site.data.awards %}
  <li> {{ award.name | replace: "-","&#8211;"}} </li>
@@ -83,33 +82,13 @@ permalink: /about/
 {% endif %}
 
 
-{% if site.data.people %}
+{% if site.data.extracurricular %}
 <div class="jumbotron">
-### Students and mentoring
+### Extra-Curricular Activities
 <ul>
-{% for student in site.data.people %}
- <li> {{ student.name }}, {{student.location}} ({{student.degree}}, {{student.year}}) </li>
+{% for activity in site.data.extracurricular %}
+ <li> {{ activity.name }} </li>
 {% endfor %}
 </ul>
 </div>
 {% endif %}
-
-
-{% if site.data.collaborators %}
-<div class="jumbotron">
-### Collaborators
-<ul>
-{% for collab in site.data.collaborators %}
- <li> <a href="{{collab.url}}" target="_blank">{{collab.name}}</a> ({{collab.title}})</li>
-{% endfor %}
-</ul>
-</div>
-{% endif %}
-
-
-<div class="jumbotron">
-  <h4>Sponsors</h4>
-  <div style='display:block; text-align:center; margin-left:auto; margin-right:auto;'>
- {% for funder in site.data.funders %}<a href="{{ funder.url }}" target="_blank"><img src='{{ site.url }}{{ site.baseurl }}/images/logopic/{{ funder.image }}' style='max-height: 80px; max-width: 200px; margin: 1%'/></a>{% endfor %}
-  </div>
-</div>
