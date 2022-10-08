@@ -74,10 +74,8 @@ With the start of pandemic, there was an increase in the demand of video confere
 they were always criticised for their lack of data security. This project aimed at creating a video conferencing system 
 with a distributed architecture, keeping data security at the helm. I developed a web application with a mesh architecture using WebRTC. 
 I also added a discovery server, capability to view multiple screens and selective display. This design could support 5 users with 
-video but wasn't scalable beyond that. 
-
-I also developed an alternate architecture that uses supernodes to improve the scalability of the system.
-Certain nodes are elected to become supernode which provide additional processing for the system.
+video but wasn't scalable beyond that. I used <a href="https://ieeexplore.ieee.org/document/1517787">supernodes</a> to solve this problem. 
+These improved the scalability of the system to 12 users.
 </div>
 <div class="col-md-3 col-sm-12" style="background-color:transparent;">
 </div>
