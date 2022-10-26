@@ -28,6 +28,8 @@ task :publish => [:generate] do
     system "git init"
     system "git add ."
     message = "Site updated at #{Time.now.utc}"
+    system "git config --global user.email \"divyangmittal44@ggmail.com\""
+    system "git config --global user.name \"Divyang Mittal\""
     system "git commit -m #{message.inspect}"
     system "git remote add origin git@github.com:divyang-mittal/divyang-mittal.github.io.git"
     system "git push origin master --force"
