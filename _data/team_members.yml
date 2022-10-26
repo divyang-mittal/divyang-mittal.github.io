@@ -1,8 +1,0 @@
-- name: Example student name
-  photo: rock.jpg
-  info: Postdoc, started Oct 2040
-  email: exampleemail@gmail.com
-  website: https://website.com
-  number_educ: 2
-  education1: Postdoc with <a href="w">XYZ</a>, Harvard University
-  education2: Ph.D. with <a href="w">XYZ</a>, X University
