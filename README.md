@@ -1,4 +1,4 @@
-# Academic Website of Divyang Mittal
+# Academic Website of Divyang Mittal 
 
 * Run `$ bundle exec jekyll serve` in the repository root directory
 * Your site is now hosted locally at `localhost:4000`, which you can access with your web browser.
