@@ -117,3 +117,28 @@ This work leverages this to improve the efficiency of resource usage.
 </div>
 </div>
 </div>
+
+<div class="jumbotron">
+<div class="row align-items-end">
+<div class="col-md-9 col-sm-12">
+ <h4>Performance Behavior Analysis and Enhancement Of System Calls</h4>
+<a href="https://os.pubpub.org/pub/blog-1/release/4" target="_blank"><button class="btn btn-danger btn-sm">BLOG</button></a>
+<br>
+</div>
+<div class="col-md-3 col-sm-12" style="background-color:transparent" >
+</div>
+</div>
+</div>
+
+<div class="jumbotron">
+<div class="row align-items-end">
+<div class="col-md-9 col-sm-12">
+ <h4>File Systems for Distributed Storage</h4>
+<a href="https://os.pubpub.org/pub/distributed-file-system/release/2" target="_blank"><button class="btn btn-danger btn-sm">BLOG</button></a>
+<br>
+</div>
+<div class="col-md-3 col-sm-12" style="background-color:transparent" >
+</div>
+</div>
+</div>
+
