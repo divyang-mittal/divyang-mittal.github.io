@@ -6,9 +6,12 @@
   linkedin: https://www.linkedin.com/in/divyang-mittal-95a334170/
   cv: cv/cv.pdf
   number_educ: 3
-  education1: (2021-) Software Engineer at Appdynamics
-  education2: (2021) B.Tech(Hons.), Computer Science and Engineering, Indian Institute of Technology Kharagpur
-  education3: (2020) Software Engineer Intern at Appdynamics
-  education1short: (2021-) SWE at Appdynamics
-  education2short: (2021) B.Tech, CSE at IIT Kharagpur
-  education3short: (2020) SWE Intern at Appdynamics
+
+  education1: (2023-) Master of Science in Computer Science at Columbia University, New York
+  education2: (2021-2023) Software Engineer at Appdynamics
+  education3: (2021) B.Tech(Hons.), Computer Science and Engineering, Indian Institute of Technology Kharagpur
+  education4: (2020) Software Engineer Intern at Appdynamics
+  education1short: (2023-) MS, CS at Columbia University
+  education2short: (2021-2023) SWE at Appdynamics
+  education3short: (2021) B.Tech, CSE at IIT Kharagpur
+  education4short: (2020) SWE Intern at Appdynamics
