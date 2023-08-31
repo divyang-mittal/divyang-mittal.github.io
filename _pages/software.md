@@ -39,7 +39,7 @@ iframe {
 <div class="jumbotron">
 <div class="row align-items-end">
 <div class="col-md-9 col-sm-12">
-<h4><b>Appdynamics Software Engineer (July 2017-)</b></h4>
+<h4><b>Appdynamics Software Engineer (July 2021-July 2023)</b></h4>
 - I am working in the data platform team, developing the new product of AppDynamics, AppdCloud. 
 - My usual activities involve designing, developing and optimising microservices that perform transforming operations on milions of data packets every minute.
 - Additional duties include investigating and solving bugs, taking up oncall and deploying to production.
@@ -66,7 +66,8 @@ solution. The tech stack also included Spark and Zeppelin.
 <div class="row align-items-end">
 <div class="col-md-9 col-sm-12">
 <h4><b>Meet-Hobby</b></h4>
-
+<a href="https://github.com/divyang-mittal/Meet-hobby" target="_blank"><button class="btn btn-danger btn-sm">Web App Code</button></a> <a href="https://github.com/divyang-mittal/android-meet-hobby" target="_blank"><button class="btn btn-danger btn-sm">Mobile App Code</button></a>
+<br>
 - A social networking app that can be used by people of similar interest to form groups.
 - Use cases include creating groups, group creators having admin access such as adding/removing people from group and creating new admins. 
 - Group members can create posts within the group and all users have ability to like and comment on these posts. 
