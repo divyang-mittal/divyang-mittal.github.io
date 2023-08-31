@@ -68,7 +68,7 @@ iframe {
 <div class="row align-items-end">
 <div class="col-md-9 col-sm-12">
  <h4>Design of WebRTC based Real Time Streaming System</h4>
-<a href="{{ site.url }}{{ site.baseurl }}/papers/BTP-1.pdf" target="_blank"><button class="btn btn-danger btn-sm">PAPER</button></a>
+<a href="{{ site.url }}{{ site.baseurl }}/papers/BTP_1.pdf" target="_blank"><button class="btn btn-danger btn-sm">PAPER</button></a>
 <br>
 With the start of pandemic, there was an increase in the demand of video conferencing systems. These systems were highly scalable but 
 they were always criticised for their lack of data security. This project aimed at creating a video conferencing system 
@@ -87,7 +87,7 @@ These improved the scalability of the system to 12 users.
 <div class="row align-items-end">
 <div class="col-md-9 col-sm-12">
 <h4>Cluster Middleware: Fenrir</h4>
-<a href="{{ site.url }}{{ site.baseurl }}/papers/Cluster-Middleware.pdf" target="_blank"><button class="btn btn-danger btn-sm">PAPER</button></a>
+<a href="{{ site.url }}{{ site.baseurl }}/papers/Cluster_Middleware.pdf" target="_blank"><button class="btn btn-danger btn-sm">PAPER</button></a> <a href="https://github.com/divyang-mittal/cluster-middleware" target="_blank"><button class="btn btn-danger btn-sm">CODE</button></a>
 <br>
 An cluster middleware for resource management with a master-worker architecture. The master node accepts tasks along 
 with their requirements such as cpu and memory. Then, It identifies the appropriate worker node from the available pool 
