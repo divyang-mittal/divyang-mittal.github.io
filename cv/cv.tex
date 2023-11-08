@@ -1,0 +1,269 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% LaTeX Template: Curriculum Vitae
+%
+% Source: http://www.howtotex.com/
+% Feel free to distribute this template, but please keep the
+% referal to HowToTeX.com.
+% Date: July 2011
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% How to use writeLaTeX:
+%
+% You edit the source code here on the left, and the preview on the
+% right shows you the result within a few seconds.
+%
+% Bookmark this page and share the URL with your co-authors. They can
+% edit at the same time!
+%
+% You can upload figures, bibliographies, custom classes and
+% styles using the files menu.
+%
+% If you're new to LaTeX, the wikibook is a great place to start:
+% http://en.wikibooks.org/wiki/LaTeX
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[paper=a4,fontsize=10pt]{scrartcl} % KOMA-article class
+
+\usepackage[english]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage{enumitem}
+\usepackage[protrusion=true,expansion=true]{microtype}
+\usepackage{amsmath,amsfonts,amsthm}     % Math packages
+\usepackage{graphicx}                    % Enable pdflatex
+\usepackage[hidelinks]{hyperref}
+\usepackage{fontawesome}
+\usepackage[svgnames]{xcolor}            % Colors by their 'svgnames'
+\usepackage{geometry}
+	\textheight=700px                    % Saving trees ;-)
+\usepackage{url}
+
+\frenchspacing              % Better looking spacings after periods
+\pagestyle{empty}           % No pagenumbers/headers/footers
+
+%%% Custom sectioning (sectsty package)
+%%% ------------------------------------------------------------
+\usepackage{sectsty}
+
+\sectionfont{%			            % Change font of \section command
+	\usefont{OT1}{phv}{b}{n}%		% bch-b-n: CharterBT-Bold font
+	\sectionrule{0pt}{0pt}{-5pt}{3pt}}
+
+%%% Macros
+%%% ------------------------------------------------------------
+\newlength{\spacebox}
+\settowidth{\spacebox}{8888888888}			% Box to align text
+\newcommand{\sepspace}{\vspace*{1em}}		% Vertical space macro
+
+\newcommand{\MyName}[1]{ % Name
+		\Huge \usefont{OT1}{phv}{m}{n} \hfill #1
+		\par \normalsize \normalfont}
+
+\newcommand{\MySlogan}[1]{ % Slogan (optional)
+		\large \usefont{OT1}{phv}{m}{n}\hfill \textit{#1}
+		\par \normalsize \normalfont}
+
+\newcommand{\NewPart}[1]{\section*{\uppercase{#1}}}
+
+\newcommand{\PersonalEntry}[2]{
+		\noindent\hangindent=1em\hangafter=0 % Indentation
+		\parbox{\spacebox}{        % Box to align text
+		\textit{#1}}		       % Entry name (birth, address, etc.)
+		\hspace{1.5em} #2 \par}    % Entry value
+
+\newcommand{\SkillsEntry}[2]{      % Same as \PersonalEntry
+		\noindent\hangindent=2em\hangafter=0 % Indentation
+		\parbox{\spacebox}{        % Box to align text
+		\textit{#1}}			   % Entry name (birth, address, etc.)
+		\hspace{1.5em} #2 \par}    % Entry value
+
+\newcommand{\EducationEntry}[4]{
+		\noindent \textbf{#1} \hfill      % Study
+		\colorbox{White}{%
+			\parbox{6em}{%
+			\hfill\color{Black}#2}} \par  % Duration
+		\noindent \textit{#3} \par        % School
+		\noindent\hangindent=2em\hangafter=0 \small #4 % Description
+		\normalsize \par}
+
+\newcommand{\WorkEntry}[4]{				  % Same as \EducationEntry
+		\noindent \textbf{#1} \hfill      % Jobname
+		\colorbox{Black}{\color{White}#2} \par  % Duration
+		\noindent \textit{#3} \par              % Company
+		\noindent\hangindent=2em\hangafter=0 \small #4 % Description
+		\normalsize \par}
+
+%%% Begin Document
+%%% ------------------------------------------------------------
+\begin{document}
+% you can upload a photo and include it here...
+%\begin{wrapfigure}{l}{0.5\textwidth}
+%	\vspace*{-2em}
+%		\includegraphics[width=0.15\textwidth]{photo}
+%\end{wrapfigure}
+
+\MyName{Divyang Mittal}
+\MySlogan{\large \href{https://github.com/divyang-mittal}{\faicon{github}} \href{https://www.linkedin.com/in/divyang-mittal/}{\faicon{linkedin}}
+\href{mailto:divyangmittal44@gmail.com}{\faicon{envelope}}
+}
+\sepspace
+
+
+%%% Education
+%%% ------------------------------------------------------------
+\NewPart{Education}{}
+
+\EducationEntry{B.Tech (Hons.), Computer Science and Engineering}{2017-2021}{Indian Institute of Technology, Kharagpur}{CGPA 9.28 \hspace*{60mm} Department Rank-13 $|$ University Rank-32}
+
+% \sepspace
+
+\NewPart{Fields of Interest}{
+    Distributed Systems, Systems and Networks
+}
+
+% \EducationEntry{Senior Secondary School}{2015-2017}{St. Mark's Public School}{CGPA 9.08}
+
+%%% Work experience
+%%% ------------------------------------------------------------
+\NewPart{Work Experience}{}
+
+\EducationEntry{Software Development Engineer}{July, 2021 - }{Appdynamics, Cisco}{
+\begin{itemize}[noitemsep]
+    \item Developed and maintained multiple \textbf{microservices} that transform millions of data packets every minute with high scalability and resiliency.
+    \item Created a library for \textbf{SLO} that was implemented as the standard solution company wide.
+    \item Tech Stack: JAVA, Apache Kafka, Kubernetes, Micronaut, RocksDB, ReactiveX, Prometheus, etc
+\end{itemize}
+}
+\sepspace
+
+\EducationEntry{Software Engineering Intern}{Summer,2020}{AppDynamics, Cisco}{
+\begin{itemize}[noitemsep]
+  \item Created an \textbf{indexing} mechanism over data present in AWS s3 buckets to speed up query.
+  \item Worked with hadoop distributed file system(HDFS) and leveraged \textbf{map-reduce} to provide a faster solution. The tech stack also included Spark and Zeppelin.
+  \item Took care of \textbf{small file problem} in the proposed solution by generating equivalent size files.
+  \item The final solution was able to reduce the query time by 40 percent in our tests.
+\end{itemize}
+}
+\sepspace
+
+\EducationEntry{Bachelor Thesis Project}{Fall,2020}{Prof. Sandip Chakraborty, IIT Kharagpur}{
+\begin{itemize}[noitemsep]
+  \item Developed a \textbf{video conferencing system} that uses p2p network for enhanced \textbf{security}.
+  \item Used \textbf{WebRTC} protocol with JavaScript and nodejs to create a working prototype.
+  \item Created a semi-distributed architecture that uses \textbf{supernodes} for better scalability.
+  \item Implemented various Multipoint Control Unit(MCU) and Selective Forwarding Unit(SFU) like kurento, jitsi video-bridge.
+\end{itemize}
+}
+
+
+%%% Work experience
+%%% ------------------------------------------------------------
+\NewPart{Relevant Projects}{}
+
+\EducationEntry{Cluster Management System}{Spring, 2021}{Research Areas and Tools: Operating Systems, Computer Networks, Consistency Models, Python}{
+\begin{itemize}[noitemsep]
+\item Developed a fault tolerant cluster management system with an \textbf{active-passive} architecture with sequential consistency, several compute nodes and a file server.
+\item Incorporated \textbf{fault tolerance} against one master node and any number of computation nodes.
+\end{itemize}
+}
+
+% \EducationEntry{BTP Seminar}{Spring,2020}{Prof. Sandip Chakraborty, IIT Kharagpur}{
+% \begin{itemize}[noitemsep]
+%   \item Explored the trusted execution environment provided by op-tee Operating system.
+%   \item Created a few trusted applications in op-tee os which controls various gpio pins in a rpi through op-tee shell commands. We were able to access a rpi through a trusted environment.
+% \end{itemize}
+% }
+% \sepspace
+
+\EducationEntry{Advances in Operating Systems Course Project}{Fall, 2020}{Research Areas and Tools: Operating Systems, Kernel Programming, C++}{
+\begin{itemize}[noitemsep]
+  \item Created a \textbf{loadable kernel module} for Ubuntu that performs CRUD operations on a file.
+  \item Developed a file system, "Simple file system", for Ubuntu similar to ext2 file system.
+  \item Simple file system supports \textbf{CRUD} operations on both files and directories.
+\end{itemize}
+}
+\newpage
+
+% \EducationEntry{Computer Networks Course Projects}{Spring,2019}{Research Areas and Tools: }{
+% \begin{itemize}[noitemsep]
+% Created a peer to peer network where peers communicate using rpc calls. Used a discovery server to identify various peers in the network.\\
+% Developed a proxy server which reads all the requests and redirects them to appropriate destination.\\
+% Developed an API over udp sockets to provide reliable communication.
+% \end{itemize}
+% }
+
+% \sepspace
+% \EducationEntry{Operating Systems Lab}{Spring,2020}{Prof. Mainack Mondal, IIT Kharagpur}{Implemented functionalities in pintos to execute system calls and take input arguments. Additionally replaced the busy waiting in the alarm implementation by an efficient method.\\
+% Implemented a round robin CPU scheduler using threads.
+% }
+% \sepspace
+
+\EducationEntry{High Performance Parallel Programming Course Project}{Spring, 2021}{Research Areas and Tools: Parallel Programming, CUDA, DNN}{
+\begin{itemize}[noitemsep]
+  \item Implemented the \textbf{scheduling} algorithm for allocating tasks to GPU from the work, "s3DNN[3] Supervised Streaming and Scheduling for GPU Accelerated Real Time DNN Workloads".
+  \item It leverages the low GPU utilization by tasks in the final layers of DNN to concurrently schedule multiple concurrent \textbf{CUDA} tasks.
+\end{itemize}
+}
+
+\EducationEntry{Database Management Systems Course Project}{Spring, 2020}{Tools: DBMS, Javascript, Django, MySQL}{
+\begin{itemize}[noitemsep]
+  \item Developed a social networking \textbf{web application} that helps people to create groups and chat.
+  \item Users can create groups, post text and images in these groups which could be liked and commented by other group members. Group admins can add/remove members and appoint new admins.
+  \item Created elaborate design of the database to \textbf{optimize} the fetch and write operations.
+\end{itemize}
+}
+
+
+\EducationEntry{Virtual Assistant - JARVIS}{Spring, 2019}{Tools: Javascript, Flask, MySQL}{
+\begin{itemize}[noitemsep]
+  \item Developed a \textbf{virtual assistant} web application which allows users to organise their life.
+  \item Use cases included scheduling meetings, providing reminders, creating resume, etc.
+  \item Used standard software engineering practices like creating \textbf{SRS} document and \textbf{DFD}.
+\end{itemize}
+}
+\sepspace
+
+% \EducationEntry{Compilers Course Project}{Fall, 2019}{Research Areas and Tools: Compilers, C++, YACC, BISON, FLEX}{
+% \begin{itemize}[noitemsep]
+%   \item Compiler for language TinyC, a reduced subset of language C.
+%   \item Implemented a custom parser and lexer.
+% \end{itemize}
+% }
+% \sepspace
+
+
+%%% Skills
+%%% ------------------------------------------------------------
+\NewPart{Skills And Course Work}{
+\SkillsEntry{Programming Languages}{C++, JAVA, Python}
+\sepspace
+\SkillsEntry{Tools/libraries}{\textsc{Apache Kafka}, \textsc{Micronaut}, \textsc{Kubernetes}, \textsc{ReactiveX}, \textsc{Prometheus},     \hspace*{24mm} \textsc{Flask}, \textsc{WebRTC}}
+\sepspace
+\SkillsEntry{Systems Courses}{Operating Systems, Computer Networks, Advances in Operating System \hspace*{24mm} Designs, Distributed Systems, High Performance Parallel Programming}
+\sepspace
+\SkillsEntry{Other Courses}{Software Engineering, Computer Organization and Architecture, High Per- \hspace*{24mm} formance in Computer Architecture, Database Management Systems}
+}
+
+% \\\textsc{Django}, \textsc{Flask}, \textsc{WebRTC} , scala, python, javascript
+
+\NewPart{Achievements}{
+\begin{itemize}[noitemsep]
+  \item Department Rank \textbf{13} in the Computer Science and Engineering Department, IIT Kharagpur.
+  \item University Rank \textbf{32} among over 600 students at IIT Kharagpur.
+  \item Achieved \textbf{175} rank in ICPC Amritapuri Regionals 2019-2020.
+  \item Secured All India Rank \textbf{214} in JEE Advance 2017 among 1.7 Lakh Students. \item Achieved All India Rank \textbf{829} in JEE Main 2017 among 10 Lakh Students.
+\end{itemize}
+}
+
+
+
+\NewPart{Extra Curricular Activities}{
+\begin{itemize}[noitemsep]
+  \item \textbf{President} at Code-Club (Affiliated to Computer Science and Engineering Department, IIT Kharagpur). \textbf{Organised} and \textbf{taught} at introductory python classes, competitive programming bootcamps attended by hundreds of students. Organised competitions to improve the coding culture of the institution. \textbf{Coordinated} up.AI summit, the first Artificial Intelligence summit in our campus.
+  \item \textbf{Tutored} 50 first year students for Introduction to Programming course.
+  \item Member of National Service Scheme (NSS), IIT Kharagpur, Received recognition for showing \textbf{exceptional} service for the betterment of society and \textbf{leading} a unit of 80 students.
+%   \item Member of Technology Hindi Dramatics Society (THDS), Pravah in IIT Kharagpur.
+
+\end{itemize}
+}
+
+\end{document}
