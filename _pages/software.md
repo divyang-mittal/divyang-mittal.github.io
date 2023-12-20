@@ -65,6 +65,56 @@ solution. The tech stack also included Spark and Zeppelin.
 <div class="jumbotron">
 <div class="row align-items-end">
 <div class="col-md-9 col-sm-12">
+<h4><b>Distributed Key Value Store</b></h4>
+<br>
+- Implemented paxos library using Golang to create a distributed log to maintain sequential consistency of operations.
+- Utilized distributed log to serve client requests, ensuring at most once semantics.
+- Implemented model checking for verification of the logic as a state machine.
+
+</div>
+</div>
+</div>
+
+<div class="jumbotron">
+<div class="row align-items-end">
+<div class="col-md-9 col-sm-12">
+<h4><b>Lexical Complexity Prediction</b></h4>
+<br>
+- Developed a system to predict lexical complexity of words in English Sentences on a 5 - point scale.
+- Designed a Hybrid Machine Learning Model, achieving Pearson’s r of 0.74 on test data.
+- Experimented with models GPT2, RoBERTa achieving best Pearson’s r of 0.8 on test data.
+</div>
+</div>
+</div>
+
+<div class="jumbotron">
+<div class="row align-items-end">
+<div class="col-md-9 col-sm-12">
+<h4><b>File System for Linux Kernel</b></h4>
+<br>
+- Devised a file system to perform CRUD operations on files and directories. Programmed in C for linux kernel.
+- Tested the file system by emulating a memory system of 4KB blocks.
+</div>
+</div>
+</div>
+
+<div class="jumbotron">
+<div class="row align-items-end">
+<div class="col-md-9 col-sm-12">
+<h4><b>Studdy Buddy</b></h4>
+<a href="{{ site.url }}{{ site.baseurl }}/papers/ERDiagram.pdf" target="_blank"><button class="btn btn-danger btn-sm">ER Diagram</button></a>
+<br>
+- A database app that can be used by students to find their studdy partners or tutors.
+- Different user modes for students and teachers. Teachers able to add courses. 
+- Used features of PostgreSQL; triggers and text search to implement gpa calculation and text query.
+
+</div>
+</div>
+</div>
+
+<div class="jumbotron">
+<div class="row align-items-end">
+<div class="col-md-9 col-sm-12">
 <h4><b>Meet-Hobby</b></h4>
 <a href="https://github.com/divyang-mittal/Meet-hobby" target="_blank"><button class="btn btn-danger btn-sm">Web App Code</button></a> <a href="https://github.com/divyang-mittal/android-meet-hobby" target="_blank"><button class="btn btn-danger btn-sm">Mobile App Code</button></a>
 <br>
@@ -73,6 +123,19 @@ solution. The tech stack also included Spark and Zeppelin.
 - Group members can create posts within the group and all users have ability to like and comment on these posts. 
 - We created elaborate designs of the database to optimise the fetch operations. 
 - The app was built using Django and MySQL.
+
+</div>
+</div>
+</div>
+
+<div class="jumbotron">
+<div class="row align-items-end">
+<div class="col-md-9 col-sm-12">
+<h4><b>Computer Networks Projects</b></h4>
+<br>
+- Created a peer to peer network where peers communicate using rpc calls. Used a discovery server to identify various peers in the network.
+- Developed a proxy server which reads all the requests and redirects them to appropriate destination.
+- Developed an API over udp sockets to provide reliable communication.
 
 </div>
 </div>
