@@ -66,7 +66,6 @@ solution. The tech stack also included Spark and Zeppelin.
 <div class="row align-items-end">
 <div class="col-md-9 col-sm-12">
 <h4><b>Distributed Key Value Store</b></h4>
-<br>
 - Implemented paxos library using Golang to create a distributed log to maintain sequential consistency of operations.
 - Utilized distributed log to serve client requests, ensuring at most once semantics.
 - Implemented model checking for verification of the logic as a state machine.
@@ -79,7 +78,6 @@ solution. The tech stack also included Spark and Zeppelin.
 <div class="row align-items-end">
 <div class="col-md-9 col-sm-12">
 <h4><b>Lexical Complexity Prediction</b></h4>
-<br>
 - Developed a system to predict lexical complexity of words in English Sentences on a 5 - point scale.
 - Designed a Hybrid Machine Learning Model, achieving Pearson’s r of 0.74 on test data.
 - Experimented with models GPT2, RoBERTa achieving best Pearson’s r of 0.8 on test data.
@@ -91,7 +89,6 @@ solution. The tech stack also included Spark and Zeppelin.
 <div class="row align-items-end">
 <div class="col-md-9 col-sm-12">
 <h4><b>File System for Linux Kernel</b></h4>
-<br>
 - Devised a file system to perform CRUD operations on files and directories. Programmed in C for linux kernel.
 - Tested the file system by emulating a memory system of 4KB blocks.
 </div>
@@ -132,6 +129,7 @@ solution. The tech stack also included Spark and Zeppelin.
 <div class="row align-items-end">
 <div class="col-md-9 col-sm-12">
 <h4><b>Computer Networks Projects</b></h4>
+<a href="https://github.com/divyang-mittal/Academics/tree/main/sixth%20sem/networks%20lab" target="_blank"><button class="btn btn-danger btn-sm">Project link</button></a> 
 <br>
 - Created a peer to peer network where peers communicate using rpc calls. Used a discovery server to identify various peers in the network.
 - Developed a proxy server which reads all the requests and redirects them to appropriate destination.
